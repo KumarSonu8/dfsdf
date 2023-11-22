@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./images/895.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    width: 450px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    /* border-top: 2px solid rgb(186, 181, 189); */
+    border-radius: 5px;
+    height: 90%;
+    width: 100%;
+    box-shadow: 10px 15px rgb(54, 15, 143);
+    position: relative;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgb(19, 67, 163),rgb(149, 16, 151));
+    opacity: 0.8;
+    z-index: -1;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 10%;
+    width: 80%;
+}
+
+
+input{
+    height: 45px;
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    position: relative;
+    /* background: transparent; */
+    background: linear-gradient(90deg, rgb(226, 43, 180), rgb(80, 39, 185));
+    opacity: 0.5;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+input::placeholder{
+    color: #fff;
+}
+
+.formContent i {
+    position: absolute;
+    right: 13%;
+    visibility: hidden;
+    /* color: #777; */
+}
+.formContent.error .fa-circle-exclamation {
+    visibility: visible;
+    color: red;
+}
+.formContent.sucess .fa-circle-check {
+    visibility: visible;
+    color: rgb(27, 203, 27);
+}
+
+span {
+    color: rgb(233, 30, 30);
+    font-size: 16px;
+    font-weight: 700;
+    visibility: hidden;
+    /* position: absolute; */
+}
+
+.formContent.error input{
+    border: 3px solid red;
+    /* border-color: red; */
+}
+.formContent.sucess input{
+    border: 3px solid rgb(27, 203, 27);
+    border-color: rgb(27, 203, 27);
+}
+
+.formContent.error span{
+    visibility: visible;
+}
+
+button {
+    height: 45px;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(226, 43, 180), rgb(80, 39, 185));
+    /* margin-bottom: 20px; */
+}
+
+button:active{
+    box-shadow: 3px 5px blueviolet;
+    transform: translateY(5px);
+}
